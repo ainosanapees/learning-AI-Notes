@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.NET Learning Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 40px 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .notes-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .notes-section h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .notes-section p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .resource-list {
+            list-style: none;
+            padding: 0;
+        }
+        .resource-list li {
+            padding: 10px;
+            margin: 5px 0;
+            background: #e8eaf6;
+            border-radius: 5px;
+            border-left: 4px solid #667eea;
+        }
+        footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>.NET Learning Hub</h1>
+            <p>Your personal learning workspace for .NET development</p>
+        </header>
+        
+        <div class="content">
+            <div class="section">
+                <h2>.NET Framework Overview</h2>
+                <div class="image-container">
+                    <img src="images/dotnet.png" alt=".NET Logo" style="max-width: 300px;">
+                </div>
+                <p>Welcome to your .NET learning journey! This hub will help you organize your notes and reference materials as you progress through your learning.</p>
+            </div>
+
+            <div class="section">
+                <h2>Learning Resources</h2>
+                <ul class="resource-list">
+                    <li>📚 <a href="c-sharp-basics/introduction.html" style="color: #667eea; text-decoration: none; font-weight: 500;">C# Introduction & Latest Features</a></li>
+                    <li>💻 C# Language Fundamentals</li>
+                    <li>🏗️ ASP.NET Core Web Development</li>
+                    <li>📦 Entity Framework Core</li>
+                    <li>🧪 Unit Testing & Debugging</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Your Learning Notes</h2>
+                <div class="notes-section">
+                    <h3>Quick Notes</h3>
+                    <p>This is where you can add your AI-generated notes and key learnings. Create separate markdown files (like notes.md, concepts.md) in this folder for organized reference!</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Getting Started</h2>
+                <div class="notes-section">
+                    <h3>Folder Structure Suggestion</h3>
+                    <p>
+                        📁 Learning/<br>
+                        ├── 📄 index.html (this file)<br>
+                        ├── 📄 notes.md (your learning notes)<br>
+                        ├── 📄 concepts.md (key concepts)<br>
+                        ├── 📄 examples.md (code examples)<br>
+                        └── 📄 projects/ (your practice projects)
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Keep learning, keep growing! 🚀</p>
+        </footer>
+    </div>
+</body>
+</html>
