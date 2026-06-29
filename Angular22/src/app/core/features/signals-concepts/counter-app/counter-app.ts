@@ -1,4 +1,4 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { Counter } from '../../../../services/counter';
 
 @Component({
@@ -17,7 +17,13 @@ export class CounterApp {
     // count = signal<number>(0);
     public counterService = inject(Counter);
     count = this.counterService.count;
+  doubleCount = this.counterService.doubleCount;
+  tripleCount = this.counterService.tripleCount;
+  firstname =signal<string>('Angular 22');
+  lastname = signal<string>('Learning application');
+  fullname = computed(() => `${this.firstname()} ${this.lastname()}`);
 
+  
   increment()
   {
     this.counterService.increment();
